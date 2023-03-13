@@ -1,0 +1,324 @@
+.Brands {
+    margin-top: 130px;
+}
+
+.brand {
+
+    &__inner {
+
+        .brand__title {
+            padding-left: 79px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 73px;
+            color: #3D3D3D;
+        }
+
+        .brand__names {
+            margin-top: 30px;
+            border: 1px solid #A6B5CA;
+
+            .first__column {
+                display: flex;
+
+
+                .brand__fitst__col {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 454px;
+                    height: 449px;
+                    border: 1px solid #A6B5CA;
+
+                    .brand__hidden__sender {
+                        display: none;
+
+                    }
+
+                    .brand__image__style {
+
+                        .brand__first__image {
+                            display: flex;
+                            justify-content: center;
+
+
+                        }
+
+                        // .brand__first__image:nth-child(1) img{
+                        //     width: 254px;
+                        //     height: 171px;
+                        // }
+
+                        .brand__fitst__hovercol {
+                            padding: 70px 0 0 61px;
+
+
+                            ul {
+                                display: none;
+                            }
+
+                            ul li {
+                                margin-bottom: 22px;
+                                display: flex;
+                                gap: 22px;
+                                align-items: center;
+                                font-family: 'Prompt', sans-serif;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 32px;
+                                line-height: 42px;
+                                color: #002656;
+                                cursor: pointer;
+                            }
+
+                            ul li:hover {
+                                color: #2a96cd;
+                            }
+
+                            ul li:hover svg path {
+                                fill: #2a96cd;
+                            }
+
+                        }
+                    }
+
+
+                }
+
+                .brand__fitst__col:hover {
+                    justify-content: start;
+                    align-items: flex-start;
+                }
+
+                .brand__fitst__col:hover .brand__image__style img {
+                    display: none;
+                }
+
+                .brand__fitst__col:hover .brand__fitst__hovercol ul {
+                    display: inline;
+                }
+            }
+
+            .second__column {
+                display: flex;
+
+                .brand__second__col {
+                    border: 1px solid #A6B5CA;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 605px;
+                    height: 512px;
+
+                    .brand__hidden__sender {
+                        display: none;
+                    }
+
+                    .brand__image__style {
+                        position: relative;
+
+                        .brand__fitst__hovercol {
+                            padding: 70px 0 0 61px;
+
+                            ul {
+                                display: none;
+                            }
+
+                            ul li {
+                                margin-bottom: 22px;
+                                display: flex;
+                                gap: 22px;
+                                align-items: center;
+                                font-family: 'Prompt', sans-serif;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 32px;
+                                line-height: 42px;
+                                color: #002656;
+                                cursor: pointer;
+                            }
+
+                            ul li:hover {
+                                color: #2a96cd;
+                            }
+
+                            ul li:hover svg path {
+                                fill: #2a96cd;
+                            }
+
+                        }
+
+                        .brand__first__image {
+                            display: flex;
+                            justify-content: center;
+
+
+                        }
+                    }
+                }
+
+                .brand__second__col:hover .brand__image__style img {
+                    display: none;
+                }
+
+                .brand__second__col:hover {
+                    justify-content: start;
+                    align-items: flex-start;
+                }
+
+                .brand__second__col:hover .brand__fitst__hovercol ul {
+                    display: inline;
+                }
+
+            }
+        }
+    }
+}
+
+
+@media (max-width:1510px) {
+
+    .brand {
+
+
+        &__names {
+            .first__column {
+                flex-wrap: wrap;
+            }
+
+        }
+
+        &__inner {
+            .brand__names {
+                .first__column {
+                    .brand__fitst__col {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+@media (max-width:1420px) {
+    .brand {
+        &__names {
+            .second__column {
+                flex-wrap: wrap;
+            }
+
+        }
+
+        &__inner {
+            .brand__names {
+                .second__column {
+                    .brand__second__col {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+
+@media (max-width:840px) {
+
+    .brand__fitst__hovercol {
+        display: none;
+    }
+
+    .brand__first__image img {
+        width: 215px;
+    }
+
+    .brand__inner .brand__names .first__column .brand__fitst__col {
+        position: relative;
+        height: 300px;
+    }
+
+    .brand__inner .brand__names .second__column .brand__second__col {
+        position: relative;
+    }
+
+
+    .brand__inner .brand__names .first__column .brand__fitst__col:hover .brand__first__image img {
+        display: inline;
+    }
+
+    .brand__inner .brand__names .first__column  .brand__fitst__col:hover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .brand__inner .brand__names .second__column  .brand__second__col:hover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .brand__inner .brand__names .second__column .brand__second__col:hover .brand__first__image img {
+        display: inline;
+    }
+
+    .brand__inner .brand__names .first__column .brand__fitst__col .brand__hidden__sender {
+        display: inline;
+        position: absolute;
+        right: 10px;
+        bottom: 0;
+        cursor: pointer;
+    }
+
+    .brand__inner .brand__names .second__column .brand__second__col .brand__hidden__sender {
+        display: inline;
+        position: absolute;
+        right: 10px;
+        bottom: 0;
+        cursor: pointer;
+    }
+
+
+
+}
+
+
+@media (max-width:550px) {
+    .brand__inner .brand__names .first__column .brand__fitst__col .brand__image__style .brand__first__image img {
+        width: 110px;
+    }
+
+    .brand__inner .brand__names .first__column .brand__fitst__col {
+        height: 150px;
+    }
+
+
+    .brand__inner .brand__names .second__column .brand__second__col {
+        height: 300px;
+    }
+
+
+    .brand__inner .brand__names .second__column .brand__second__col .brand__hidden__sender svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .brand__inner .brand__names .first__column .brand__fitst__col .brand__hidden__sender svg {
+        width: 18px;
+        height: 18px;
+    }
+
+
+}
+
+@media (max-width:400px) {
+    .brand__inner .brand__title {
+        padding-left: 30px;
+    }
+
+}

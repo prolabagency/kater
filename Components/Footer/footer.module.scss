@@ -1,0 +1,129 @@
+.Footer {
+    margin-top: 80px;
+}
+
+.footer {
+
+    &__inner {
+        border: 1px solid #A6B5CA;
+        padding: 26px 70px 36px 48px;
+    }
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__head__lis ul {
+        display: flex;
+        gap: 68px;
+    }
+
+    &__head__lis ul a {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #3D3D3D;
+        transition: 0.4s ease-in-out;
+
+        :hover {
+            color: #2A96CD;
+        }
+    }
+
+    &__head__lis ul a.active {
+        color: #2A96CD;
+    }
+
+    &__bottom {
+        margin-top: 35px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__bottom__left {
+        font-family: 'Prompt', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #2A96CD;
+
+    }
+
+    &__bottom__right {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #2A96CD;
+
+        a {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            text-decoration: underline;
+            color: #2A96CD;
+        }
+    }
+
+}
+
+
+@media (max-width:905px) {
+    .footer {
+
+        &__inner {
+            padding: 0;
+        }
+
+        &__head {
+            display: block;
+        }
+
+        &__head__logo {
+            border: 1px solid #A6B5CA;
+            display: flex;
+            justify-content: center;
+            padding: 16px 0 10px 0;
+        }
+
+        &__head__lis {
+            ul {
+                display: block;
+                overflow: hidden;
+
+                a li {
+                    display: flex;
+                    justify-content: center;
+                    padding: 16px 0 16px 0;
+                    border: 1px solid #A6B5CA;
+                }
+
+            }
+        }
+
+        &__bottom{
+            display: block;
+            .footer__bottom__left{
+                display: flex;
+                justify-content: center;
+            }
+
+            .footer__bottom__right{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 23px;
+            }
+        }
+
+
+    }
+
+}

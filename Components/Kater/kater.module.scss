@@ -1,0 +1,595 @@
+.Kater {
+    margin-top: 137px;
+    position: relative;
+}
+
+.kater {
+
+    &__inner {
+        position: relative;
+        border: 1px solid #A6B5CA;
+    }
+
+    &__inner.active{
+        position: relative;
+        border: 1px solid #A6B5CA;
+    }
+
+    &__title {
+        border-bottom: 1px solid #A6B5CA;
+
+        p {
+            padding: 32px 0 28px 71px;
+            font-family: 'Prompt', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 73px;
+            color: #3D3D3D;
+        }
+    }
+
+    &__names {
+        width: 100%;
+        overflow: hidden;
+
+        .kater__first {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .kater__box {
+            width: 50%;
+            cursor: pointer;
+            border: 1px solid #A6B5CA;
+
+            .kater__box__imgbg {
+                padding: 14px;
+            }
+
+            p {
+                position: absolute;
+                font-family: 'Prompt', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 48px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+
+            .kater__box__image {
+                overflow: hidden;
+                height: 483px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                object-fit: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 877px;
+                    transition: 0.8s ease-in-out;
+                }
+            }
+
+            .kater__box__image:hover img {
+                transform: scale(1.2);
+            }
+        }
+
+    }
+}
+
+
+.toBack__icon__kater {
+    padding: 20px 0 0 20px;
+    max-width: 130px;
+}
+
+.toBack__icon__kater svg {
+    cursor: pointer;
+}
+
+.about__detail__kater__stadii1 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 27%;
+    gap: 203px;
+    top: 13%;
+}
+
+
+.about__kater__detail{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+.kater__detail1 {
+    position: relative;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    svg {
+        cursor: pointer;
+    }
+}
+
+
+.about__detail__kater__stadii2 {
+    position: absolute;
+    display: flex;
+    left: 24%;
+    top: 30%;
+}
+
+
+.about__detail__kater__stadii3 {
+    position: absolute;
+    display: flex;
+    gap: 500px;
+    left: 18%;
+    bottom: 23%;
+}
+
+
+.kater__about__lodka {
+    display: flex;
+    justify-content: center;
+
+    img {
+        object-fit: cover;
+    }
+}
+
+
+.kater__detail {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.kater__detail svg {
+    cursor: pointer;
+}
+
+.hidden__kater__btn{
+    display: none;
+}
+
+
+
+.model_kater_title {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Prompt', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #363636;
+}
+
+.model_kater_title svg {
+    cursor: pointer;
+}
+
+.model_kater_image {
+    margin-top: 20px;
+}
+
+.model__kater__titledescribe {
+    margin-top: 20px;
+    font-family: 'Prompt', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #363636;
+}
+
+.model__kater__describe {
+    font-family: 'Prompt', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    color: #636363;
+}
+
+.model__kater__btn {
+    display: flex;
+    justify-content: center;
+}
+
+.model__kater__btn button {
+    cursor: pointer;
+    margin-top: 32px;
+    padding: 12px 120px;
+    background: #2A96CD;
+    border: 1px solid #2A96CD;
+    font-family: 'Prompt', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+.model__kater__btn button:hover{
+    color: #2A96CD;
+    background-color: #FFFFFF;
+    border: 1px solid #2A96CD;
+
+
+}
+
+
+
+@media (max-width:1400px) {
+    .kater__about__lodka img{
+        width: 800px;
+        height: 700px;
+    }
+
+    .about__detail__kater__stadii1{
+        gap: 150px;
+        left: 25%;
+    }
+
+    .about__detail__kater__stadii2{
+        left: 15%;
+    }
+
+    .about__detail__kater__stadii3{
+        gap: 400px;
+        left: 10%;
+        bottom: 5%;
+    }
+
+
+}
+
+
+@media (max-width:1250px) {
+    .about__detail__kater__stadii1{
+        gap: 100px;
+    }
+
+}
+
+
+
+
+@media (max-width:1090px) {
+
+    .kater__names .kater__first{
+        display: block;
+    }
+
+    .kater__names .kater__box{
+        width: 100%;
+    }
+
+
+    .model_kater_image{
+        margin-top: 10px;
+    }
+
+    .model_kater_image img{
+        width: 100%;
+        height: 140px;
+    }
+
+    .model__kater__titledescribe{
+        margin-top: 10px;
+    }
+
+    .model__kater__describe{
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .model__kater__btn button{
+        margin-top: 10px;
+        padding: 5px 70px;
+        font-size: 20px;
+    }
+    
+
+
+    .kater__about__lodka img{
+        width: 600px;
+        height: 500px;
+    }
+
+    .about__detail__kater__stadii1{
+        left: 20%;
+    }
+
+    .kater__detail svg{
+        width: 50px;
+        height: 50px;
+    }
+
+    .kater__detail1 svg{
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+
+@media (max-width:960px) {
+
+    // .about__detail__kater__stadii1{
+    //     left: 15%;
+    //     top: 40%;
+    // }
+    
+    // .about__detail__kater__stadii2{
+    //     left: 10%;
+    //     top: 50%;
+    // }
+
+    .about__detail__kater__stadii3{
+        bottom: 20%;
+        left: 3%;
+        gap: 200px;
+    }
+}
+
+
+@media (max-width:860px) {
+
+    .kater__title p{
+        font-size: 32px;
+    }
+
+    .about__detail__kater__stadii1{
+        gap: 30px;
+    }
+
+    .about__detail__kater__stadii3{
+        left: 15%;
+        gap: 150px;
+    }
+
+    .kater__about__lodka img{
+        width: 400px;
+        height: 300px;
+        object-fit: contain;
+    }
+
+}
+
+@media (max-width:757px) {
+    .kater {
+        &__names {
+            .kater__box__imgbg {
+                p {
+                    font-size: 26px;
+                }
+            }
+        }
+
+    }
+
+    .kater__names .kater__box .kater__box__image img {
+        width: 100%;
+    }
+
+    .kater__names .kater__box .kater__box__image {
+        height: auto;
+    }
+
+}
+
+
+@media (max-width:700px) {
+
+    .kater__names .kater__box .kater__box__image img{
+        height: 300px;
+    }
+
+
+    .about__detail__kater__stadii3{
+        left: 5%;
+        bottom: 30%;
+    }
+
+    .kater__detail svg{
+        width: 30px;
+        height: 30px;
+    }
+
+    .kater__detail1 svg{
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+
+@media (max-width:600px) {
+
+    .kater__about__lodka img{
+        width: 282px;
+        height: 262px;
+    }
+
+    .kater__detail{
+        font-size: 12px;
+    }
+
+    .kater__detail1{
+        font-size: 12px;
+    }
+
+    .about__detail__kater__stadii3{
+        gap: 100px;
+        bottom: 40%;
+    }
+
+
+}
+
+
+@media (max-width:500px) {
+
+    .kater__names .kater__box .kater__box__image img{
+        height: 200px;
+    }
+
+    .kater__detail{
+        width: 130px;
+        bottom: 20px;
+    }
+
+    .about__detail__kater__stadii1{
+        gap: 20px;
+    }
+
+    .about__detail__kater__stadii3{
+        gap: 50px;
+        left: 12%;
+    }
+
+    .toBack__icon__kater svg{
+        width: 30px;
+    }
+
+
+    .kater__about__lodka img{
+        width: 182px;
+        height: 162px;
+    }
+
+    .kater__detail svg{
+        width: 20px;
+    }
+
+    .kater__detail1 svg{
+        width: 20px;
+    }
+
+    .kater {
+        &__title p {
+            padding: 32px;
+            font-size: 32px;
+            line-height: 32px;
+        }
+
+        &__names {
+            .kater__box__imgbg {
+                .kater__box1__image {
+                    height: 300px;
+                }
+
+                .kater__box2__image {
+                    height: 300px;
+                }
+
+                .kater__box3__image {
+                    height: 300px;
+                }
+
+                .kater__box4__image {
+                    height: 300px;
+                }
+
+                p {
+                    font-size: 24px;
+                }
+            }
+        }
+
+    }
+
+}
+
+@media (max-width:450px) {
+
+    .about__detail__kater__stadii1{
+        left: 5%;
+    }
+
+    .about__detail__kater__stadii2{
+        left: 5%;
+    }
+
+    .kater__detail1{
+        bottom: 15px;
+        gap: 5px;
+    }
+
+    .kater__detail{
+        gap: 5px;
+    }
+
+    .about__detail__kater__stadii3{
+        gap: 0;
+    }
+
+
+    .kater {
+        &__names {
+            .kater__box__imgbg p {
+                font-size: 22px;
+            }
+        }
+
+    }
+
+}
+
+
+@media (max-width:400px) {
+
+    .kater__title p{
+        font-size: 22px;
+    }
+
+    .toBack__icon__kater{
+        padding: 10px 0 0 10px;
+    }
+
+    .kater__detail{
+        width: auto;
+        font-size: 12px;
+    }
+
+     .kater__detail1{
+        width: auto;
+        bottom: 35px;
+        font-size: 12px;
+    }
+
+    .about__detail__kater__stadii1{
+        top: 10%;
+    }
+
+    .about__detail__kater__stadii2{
+        left: 0;
+    }
+
+    .about__detail__kater__stadii3{
+        gap: 60px;
+        top: 40%;
+        left: 5%;
+    }
+
+    .kater__names .kater__box__imgbg p{
+        font-size: 20px;
+    }
+
+
+}

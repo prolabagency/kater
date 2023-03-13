@@ -1,0 +1,297 @@
+.Forwork {
+    margin-top: 140px;
+}
+
+.work {
+
+    &__inner {
+        border: 1px solid #A6B5CA;
+    }
+
+    &__head {
+        padding: 90px 197px 0 69px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__head__left {
+        font-family: 'Prompt', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 58px;
+        color: #3D3D3D;
+    }
+
+    &__head__right {
+        max-width: 711px;
+        font-family: 'Prompt', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        color: #636363;
+    }
+
+    &__seemore {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        font-family: 'Prompt', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        color: #363636;
+    }
+
+    &__bottom {
+        padding-left: 36px;
+        padding-bottom: 51px;
+        margin-top: 108px;
+
+        .res_slide:nth-child(1) {
+            background-image: url('../../assets/img/simrad.png');
+            width: 615px;
+            height: 410px;
+            overflow: visible;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .res_slide:nth-child(2) {
+            background-image: url('../../assets/img/yamaha.png');
+            width: 615px;
+            height: 410px;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .res_slide:nth-child(3) {
+            background-image: url('../../assets/img/marine.png');
+            width: 615px;
+            height: 410px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .res_slide:nth-child(4) {
+            background-image: url('../../assets/img/newray.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 615px;
+            height: 410px;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .res_slide:nth-child(5) {
+            background-image: url('../../assets/img/rance.png');
+            width: 615px;
+            height: 410px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .res_slide:nth-child(6) {
+            background-image: url('../../assets/img/rad.png');
+            width: 615px;
+            height: 410px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .res__slide__describe {
+            width: 100%;
+            padding: 20px 108px 39px 20px;
+            height: 139px;
+            background-color: #363636;
+
+            .slide__title {
+                font-family: 'Prompt', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+                color: #FFFFFF;
+            }
+
+            .slide__describe {
+                font-family: 'Prompt', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #FFFFFF;
+            }
+
+
+        }
+
+        .res_slide.swiper-slide-active .quantity_box {
+            background-color: #363636;
+            color: white;
+        }
+
+        .quantity_box {
+            position: absolute;
+            top: 0;
+            padding: 8px 18px;
+            width: 44px;
+            height: 44px;
+            border: 1px solid black;
+            background-color: #FFFFFF;
+        }
+    }
+
+
+}
+
+.swiper_nav_bars {
+    margin-top: 40px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: end;
+    gap: 32px;
+
+    button {
+        padding: 12px 16px;
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #363636;
+        color: white;
+    }
+
+    button:hover svg path {
+        fill: white;
+    }
+
+
+
+}
+
+
+@media(max-width:1530px) {
+    .work__head {
+        padding: 50px 50px 0 50px;
+    }
+}
+
+@media(max-width:1340px) {
+    .work__head {
+        display: block;
+    }
+
+    .work__head__right {
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    .work__bottom {
+        margin-top: 50px;
+    }
+}
+
+
+@media(max-width:700px) {
+    .work__head {
+        padding: 20px;
+    }
+
+    .work__head__left {
+        font-size: 36px;
+        line-height: 32px;
+    }
+
+    .work__head__right {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .work__bottom {
+        padding-bottom: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .swiper-wrapper {
+        display: block;
+    }
+
+    .swiper_slide {
+        width: auto;
+        margin-bottom: 30px;
+    }
+
+    .work__bottom .res_slide:nth-child(1) {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .work__bottom .res_slide:nth-child(2) {
+        width: 100%;
+        margin-bottom: 32px;
+
+    }
+
+    .work__bottom .res_slide:nth-child(3) {
+        width: 100%;
+        margin-bottom: 32px;
+
+    }
+
+    .work__bottom .res_slide:nth-child(4) {
+        width: 100%;
+        margin-bottom: 32px;
+
+    }
+
+    .work__bottom .res_slide:nth-child(5) {
+        width: 100%;
+        margin-bottom: 32px;
+
+    }
+
+    .work__bottom .res_slide:nth-child(6) {
+        width: 100%;
+        margin-bottom: 15px;
+
+    }
+
+    .work__bottom .res__slide__describe {
+        padding: 20px;
+    }
+
+    .swiper_nav_bars {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media(max-width:420px){
+    .work__head__left{
+        font-size: 20px;
+    }
+
+    .work__seemore{
+        font-size: 16px;
+    }
+}

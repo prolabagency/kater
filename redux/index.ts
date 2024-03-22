@@ -1,12 +1,12 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import { createWrapper } from "next-redux-wrapper";
-import  bestlerSlice  from './brestler/reducer'
+import  bestler  from './brestler/reducer'
 
 
 const makeStore = () =>
   configureStore({
     reducer: {
-      [bestlerSlice.name]: bestlerSlice.reducer,
+      bestler,
     },
     devTools: true,
   });
